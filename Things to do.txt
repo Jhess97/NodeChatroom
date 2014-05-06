@@ -1,4 +1,0 @@
-List of Bugs:
-1. Fix data being appended to the end of a string which is still being typed out.
-Things to add/do:
-1. Create a windowed client
