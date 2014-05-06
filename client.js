@@ -14,7 +14,7 @@ var connect = function(serverIP) {
 		rl.question('Enter a nickname: ', function(nick) {
 			server.on('data', function(data) {
 				var parsedData = JSON.parse(data);
-				console.log(parsedData.nickname.toUpperCase() + ": " + parsedData.content + "\n");
+				console.log("\r\n" + parsedData.nickname.toUpperCase() + ": " + parsedData.content + "\n");
 			});
 
 			rl.on('line', function (cmd) {
